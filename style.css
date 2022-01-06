@@ -1,0 +1,223 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #9941bf41;
+}
+
+img {
+  text-align: center;
+}
+
+
+
+header {
+    padding-top: 10px;
+    width: 100%;
+
+    min-height: 150px;
+    background-image: linear-gradient(to bottom, #7471D9, #9941bf41);
+    text-align: right;
+    color: black;
+    margin-right: 40px;
+}
+
+header nav div.scrolls {
+    text-align: right;
+    padding-right: 40px;
+}
+
+
+header div.center {
+    text-align: center;
+}
+
+header div h1 {
+    font-size: 3.5em;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.233);
+    
+}
+
+div.esquerda {
+  text-align: left;
+}
+
+div.esquerda img {
+  
+}
+
+div.esquerda > a:hover {
+  background-color: #e0103d;
+}
+
+div.esquerda > a {
+  background-color: white;
+
+  border-radius: 30px;
+}
+
+header p {
+  font-size: 1.5em;
+}
+
+
+
+main {
+  background-color: white;
+  padding: 20px;
+  border-radius: 0px 0px 10px 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.411);
+  width: 1000px;
+  min-width: 300px;
+  margin: auto;
+}
+
+main a {
+  color: #1F3473;
+}
+main a:hover {
+  background-color: #9941bf88;
+}
+main img {
+  width: 100%;
+  display: block;
+  margin: auto;
+}
+
+main h1 {
+  font-size: 2em;
+  background-image: linear-gradient(to right, #9941bfab, #9941bf00);
+
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+nav {
+
+  box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.342);
+  padding: 10px;
+
+}
+
+nav > a {
+ 
+    color: black;
+    padding: 10px;
+    font-weight: bold;
+    transition-duration: 0.3s;
+}
+
+a:hover {
+    text-decoration: underline;
+    background-color: #9941BF;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  :root {
+    --animation-delay: 0.5s;
+    --duration: 800ms;
+    --iterations: 1;
+  }
+  
+  
+  .reveal {
+    position: relative;
+
+    user-select: none;
+    animation-name: reveal-text;
+    cursor: default;
+  }
+  .reveal:after {
+    content: "";
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #3686ff;
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    pointer-events: none;
+    animation-name: revealer-text;
+  }
+  .reveal, .reveal:after {
+    animation-delay: var(--animation-delay);
+    animation-iteration-count: var(--iterations);
+    animation-duration: var(--duration);
+    animation-fill-mode: both;
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+  .reveal.purple:after {
+    background-color: #b39fff;
+  }
+  .reveal.purple, .reveal.purple:after {
+    animation-delay: 0.75s;
+  }
+  
+  @keyframes reveal-text {
+    from {
+      clip-path: inset(0 100% 0 0);
+    }
+    to {
+      clip-path: inset(0 0 0 0);
+    }
+  }
+  @keyframes revealer-text {
+    0%, 50% {
+      transform-origin: 0 50%;
+    }
+    60%, 100% {
+      transform-origin: 100% 50%;
+    }
+    60% {
+      transform: scaleX(1);
+    }
+    100% {
+      transform: scaleX(0);
+    }
+  }
+
+
+
+
+
+  
